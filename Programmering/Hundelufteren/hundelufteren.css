@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dad{
+    background-color: #ddd;
+        padding: 15px;
+    }
+.barn{
+    background-color: cornflowerblue;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    
+}
+.flex-dad{
+    display: flex;
+}
+.barny{
+    background-color: cornflowerblue;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    height: 400px;
+    
+}
+.barn1{
+    width: 10%;
+}
+.barn2{
+    width: 50%;
+}
+.barn3{
+    width: 40%;
+}

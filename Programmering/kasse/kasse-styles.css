@@ -1,0 +1,43 @@
+h1{
+    color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    /* en border har 3 værdier tykkelse, type, farve */
+    border:2px solid black;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+.plakat{
+    border: 1px dotted rgb(181,40,50);
+    padding: 30px;
+    margin-top: 70px;
+}
+.minikasse{
+border: 2px solid red;
+padding: 3px;
+}
+a{
+    color: rgb(181,35,59);
+    font-weight: bold;
+
+}
+/* ubsøgte links */
+a:link{
+color: yellow;
+
+}
+/* besøgte links */
+a:visited{
+    color: green;
+    
+    }
+    /* når du holder over den */
+a:hover{
+    color: blue;
+    text-decoration: none;
+}
+/* mens musen klikker */
+a:active{
+color: brown;
+}
