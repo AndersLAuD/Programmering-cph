@@ -33,3 +33,15 @@ h1 {
 .evenly {
     justify-content: space-evenly;
 }
+p{
+    color: white;
+    display: flex;
+}
+.Overskriftstr {
+    font-size: 30px;
+    border:3px solid grey;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
