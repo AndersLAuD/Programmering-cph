@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(100, 9, 9);
 }
+
 h1 {
     color: rgb(135, 167, 81);
     font-family: Arial, Helvetica, sans-serif;
@@ -21,22 +22,23 @@ h1 {
     text-align: center;
     width: auto;
     border: 3px solid black;
-    
 }
 
 .container {
     padding: 15px;
     margin-top: 15px;
     display: flex;
-
 }
+
 .evenly {
     justify-content: space-evenly;
-}
-p{
+} 
+
+p {
     color: white;
     display: flex;
 }
+
 .Overskriftstr {
     font-size: 30px;
     border:3px solid grey;
@@ -44,4 +46,12 @@ p{
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+}
+
+a:link, a:visited {
+ color: hotpink;
+}
+
+a:hover {
+  color: blue;
 }
