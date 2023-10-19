@@ -13,6 +13,16 @@ h1 {
     padding-bottom: 30px;
     padding-left: 30px;
 }
+h2{
+    color: rgb(135, 167, 81);
+    font-family: Arial, Helvetica, sans-serif;
+    /* en border har 3 værdier tykkelse, type, farve */
+    border:3px solid black;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
 
 .layout {
     margin: 10px;
@@ -56,4 +66,14 @@ a:link, a:visited {
 a:hover {
   color: blue;
   text-decoration: none;
+}
+.under{
+    margin: 10px;
+    padding: 10px;
+    color: rgb(135, 167, 81);
+    font-size: 24px;
+    border: 3px solid black;
+
+
+
 }
