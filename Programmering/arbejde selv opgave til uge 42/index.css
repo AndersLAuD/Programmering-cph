@@ -12,6 +12,7 @@ h1 {
     padding-right: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
+    text-align: center;
 }
 h2{
     color: rgb(135, 167, 81);
@@ -81,5 +82,21 @@ a:hover {
     color: rgb(135, 167, 81);
     font-size: 24px;
     border: 3px solid black;
+}
+
+.down {
+    padding-top: 65px;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-bottom: 65px;
+    color: rgb(135, 167, 81);
+    font-size: 24px;
+    text-align: center;
+    width: auto;
+    border: 3px solid black;
+    justify-content: center;
+}
+.middle{
+justify-content: center;
 
 }
