@@ -40,6 +40,30 @@
     border-bottom: 4px solid white;
 }
 
+.tabs{
+    margin-top: 100px;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: center;
+}
+
+.tabs nav{
+    width: 550px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabs nav a{
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px 20px 10px 20px;
+    width: 120px;
+    text-align: center;
+}
+
+
+
 body{
     background-color: grey;
     font-family: Arial, Helvetica, sans-serif;
