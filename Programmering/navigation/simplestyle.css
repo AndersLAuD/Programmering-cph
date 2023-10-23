@@ -1,0 +1,46 @@
+/* *=alt koden. Funktion: resetter alt margin og padding på alle elementer */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.simple{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid cornflowerblue;
+    height: 50px;
+    align-items: flex-end;
+}
+
+.simple nav{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    margin-left: 20px;
+    padding-bottom: 14px;
+}
+
+.simple a{
+    text-decoration: none;
+    color: cornflowerblue;
+    font-weight: bold;
+    border-bottom: 4px solid white;
+    padding-bottom: 10px;
+}
+
+.simple a:hover{
+    border-bottom: 4px solid cornflowerblue;
+}
+
+.logo a:hover{
+    border-bottom: 4px solid white;
+}
+
+body{
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
