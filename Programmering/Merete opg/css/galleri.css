@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.galleri{
+    background-color: black;
+}
+
+.container{
+    display:flex;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+img{
+    width: 350px;
+    height: 250px;
+    padding: 5px;
+}
+
+img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5;
+}
