@@ -1,5 +1,51 @@
 html, body{
-    background-color: #ffeead;
+    background-color: gray;
     height: 100%;
     padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.container{
+    display: flex;
+    border: 5px solid blue;
+}
+
+.container >div{
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: gray;
+}
+
+.container > div:nth-child(1){
+    background-color: green;
+}
+
+.container > div:nth-child(2){
+    background-color: red;
+}
+
+.container > div:nth-child(3){
+    background-color: cornflowerblue;
+}
+
+.container >.home{
+    flex: 1;
+}
+
+.container >.search{
+    flex: 2;
+}
+
+.container >.contact{
+    flex: 1;
+}
+
+
+/* .contact{
+    margin-left: auto;
+}
+
+.home{
+    margin-right: auto;
+} */
