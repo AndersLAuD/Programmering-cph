@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    background: cornflowerblue;
+    height: 50px;
+}
+
+.hovedmenu{
+    background: lavender;
+    height: 50px;
+}
+
+.undermenu{
+    background: yellowgreen;
+    display: none;
+}
+article{
+    background: dimgray;
+    height: 400px;
+}
+
+.banner{
+    background: lightcoral;
+    display: none;
+}
+
+footer{
+    background: khaki;
+    height: 60px;
+}
