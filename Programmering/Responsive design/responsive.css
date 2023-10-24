@@ -3,14 +3,20 @@
     padding: 0;
 }
 
+body{
+    margin: 10px 2% 10px 2%;
+}
+
 .logo{
     background: cornflowerblue;
     height: 50px;
+    margin-bottom: 10px;
 }
 
 .hovedmenu{
     background: lavender;
     height: 50px;
+    margin-bottom: 10px;
 }
 
 .undermenu{
@@ -20,6 +26,7 @@
 article{
     background: dimgray;
     height: 400px;
+    margin-bottom: 10px;
 }
 
 .banner{
@@ -30,4 +37,10 @@ article{
 footer{
     background: khaki;
     height: 60px;
+}
+
+@media screen and (min-width: 682px) {
+    .undermenu{
+        display: block;
+    }
 }
