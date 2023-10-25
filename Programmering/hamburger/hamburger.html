@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Link til font awsome - også kaldet en CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="hamburger.css">
 </head>
 <body>
+    <div class="logo">
+        <a href="#">Logo</a>
+    </div>
+    <!-- stjæler lidt javascript fra w3 schools -->
     <div class="topnav" id="myTopnav">
         <a href="#">Forside</a>
         <a href="#">Services</a>
@@ -15,5 +22,19 @@
         <i class="fa fa-bars"></i>
         </a>
     </div>
+    <h1>Min hamburger</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eius cum culpa, voluptates et atque dolorem. Soluta provident accusantium fuga.</p>
+
+    <!--  her kommer der et java script, som vi kalder på længere oppe -->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </body>
 </html>
