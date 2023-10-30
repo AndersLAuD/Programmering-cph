@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lars Arne Christensen - Moderaterne</title>
+<!-- Link til font awsome - også kaldet en CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="logo">
+    <a href="#">Moderaterne - Lars Arne Christensen</a>
+</div>
+<!-- stjæler lidt javascript fra w3 schools -->
+<div class="topnav" id="myTopnav">
+    <a href="#" class="button">Forside</a>
+    <a href="#" class="button">Services</a>
+    <a href="#" class="button">Om os</a>
+    <a href="#" class="button">Kontakt</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    </a>
+</div>
+<h1>Politiker</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eius cum culpa, voluptates et atque dolorem. Soluta provident accusantium fuga.</p>
+
+<div class="background">    
+    <div class="kasse1"></div>
+    <div class="kasse2"></div>
+    <div class="kasse3"></div>
+    <div class="kasse4"></div>
+
+</div>
+
+
+<!--  her kommer der et java script, som vi kalder på længere oppe -->
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+</body>
+</html>

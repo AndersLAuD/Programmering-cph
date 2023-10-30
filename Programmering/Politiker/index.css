@@ -1,0 +1,174 @@
+/* Variabel !VIGTIG! gør man kan bruge ting og ændre dem igennem hele dokumentet istedet for at skulle skrive det samme igen og igen og hvis du så skal ændre noget bliver det irri */
+:root{
+    --main-farve: #8a1888;
+    --min-skrift: arial,helvetica,sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--min-skrift);
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: var(--main-farve);
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .topnav a {
+    color: whitesmoke;
+    padding:15px;
+    text-decoration: none;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: var(--main-farve);
+    cursor: pointer;
+  }
+  .topnav .icon {
+    display: none;
+  }
+
+  .logo{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    font-size: 24px bold;
+  }
+
+  .logo a{
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  .button{
+    font-size: 24px bold;
+  }
+  @media screen and (max-width: 600px){
+    .topnav a{
+        display: none;
+    }
+    .topnav .icon{
+        display: block;
+    }
+    /* denne klasse bliver skabt af javascrit, når man klikker på burgeren */
+    .responsive{
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+    .responsive a{
+        display: block;
+        font-size: 1.2rem;
+    }
+    .responsive .icon{
+        position:absolute;
+        top: 0;
+        right: 0;
+    }
+    .responsive .button{
+        width: 100%;
+        text-align: center;
+    }
+  }
+
+@media screen and (max-width: 768px){
+    .topnav a{
+        display: none;
+    }
+    .topnav .icon{
+        display: block;
+    }
+    /* denne klasse bliver skabt af javascrit, når man klikker på burgeren */
+    .responsive{
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+    .responsive a{
+        display: block;
+        font-size: 1.2rem;
+    }
+    .responsive .icon{
+        position:absolute;
+        top: 0;
+        right: 0;
+    }
+    .responsive .button{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1024px){
+    .topnav a{
+        display: none;
+    }
+    .topnav .icon{
+        display: block;
+    }
+    /* denne klasse bliver skabt af javascrit, når man klikker på burgeren */
+    .responsive{
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+    .responsive a{
+        display: block;
+        font-size: 1.2rem;
+    }
+    .responsive .icon{
+        position:absolute;
+        top: 0;
+        right: 0;
+    }
+    .responsive .button{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.kasse1 {
+    z-index: 1;
+    border: 6px solid white;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: orange;
+    width: 300px;
+    height: 200px;
+}
+.kasse2 {
+    z-index: 1;
+    border: 6px solid white;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: orange;
+    width: 300px;
+    height: 200px;
+}
+.kasse3 {
+    z-index: 1;
+    border: 6px solid white;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: orange;
+    width: 300px;
+    height: 200px;
+}
+.kasse4 {
+    z-index: 1;
+    border: 6px solid white;
+    margin-left: 30px;
+    /* margin-top: 30px; */
+    background-color: orange;
+    width: 300px;
+    height: 200px;
+}
+.baggrund{
+    display: flex;
+    flex-wrap: wrap;
+}
