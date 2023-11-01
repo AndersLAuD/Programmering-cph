@@ -59,6 +59,11 @@ body{
     font-size: 24px bold;
   }
 
+  .logo img{
+    width: auto;
+    height: 30px;
+  }
+
   .logo a{
     color: whitesmoke;
     text-decoration: none;
@@ -79,41 +84,7 @@ body{
     text-decoration: none;
    }
 
-  @media screen and (max-width: 600px){
-    .topnav a{
-        display: none;
-    }
-
-    .topnav .icon{
-        display: block;
-    }
-
-    /* denne klasse bliver skabt af javascrit, når man klikker på burgeren */
-    .responsive{
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 0;
-    }
-
-    .responsive a{
-        display: block;
-        font-size: 1.2rem;
-    }
-
-    .responsive .icon{
-        position:absolute;
-        top: 0;
-        right: 0;
-    }
-
-    .responsive .button{
-        width: 100%;
-        text-align: center;
-    }
-  }
-
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1024px){
     .topnav a{
         display: none;
     }
@@ -187,105 +158,24 @@ body{
     border-radius: 50px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding: 20px;
 
 }
 
-.kasse2 {
-    border: 6px solid white;
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-right: 30px;
-    background-color: var(--main-farve);
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-
+.effekt img{
+    width: auto;
+    height: 150px;
 }
 
-.kasse3 {
-    border: 6px solid white;
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-right: 30px;
-    background-color: var(--main-farve);
-    width: 300px;
-    height: 200px;
-    border-radius: 50px;
-    display: flex;
-    text-justify: auto;
-    padding: 20px;
-
-}
-
-.kasse4 {
-    border: 6px solid white;
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-right: 30px;
-    /* margin-top: 30px; */
-    background-color: var(--main-farve);
-    width: 300px;
-    height: 200px;
-    display: flex;
-    border-radius: 50px;
-    text-justify: auto;
-    padding: 20px;
-
-}
-.kasse5 {
-    border: 6px solid white;
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-right: 30px;
-    /* margin-top: 30px; */
-    background-color: var(--main-farve);
-    width: 300px;
-    height: 200px;
-    display: flex;
-    border-radius: 50px;
-    text-justify: auto;
-    padding: 20px;
-}
-.kasse6 {
-    border: 6px solid white;
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-right: 30px;
-    /* margin-top: 30px; */
-    background-color: var(--main-farve);
-    width: 300px;
-    height: 200px;
-    display: flex;
-    border-radius: 50px;
-    text-justify: auto;
-    padding: 20px;
-}
-.kasse7 {
-    border: 6px solid white;
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-right: 30px;
-    /* margin-top: 30px; */
-    background-color: var(--main-farve);
-    width: 300px;
-    height: 200px;
-    display: flex;
-    border-radius: 50px;
-    text-justify: auto;
-    padding: 20px;
-}
 .kasse8 {
     border: 6px solid white;
     margin-left: 30px;
     margin-top: 30px;
     margin-right: 30px;
     /* margin-top: 30px; */
-    background-color: var(--main-farve);
-    width: 3auto;
+    background-color: #722e8dff;
+    width: auto;
     height: auto;
     border-radius: 50px;
     text-justify: auto;
@@ -295,17 +185,6 @@ body{
 .kasse1 a{
     padding: 20px;
 }
-.kasse2 a{
-    padding: 20px;
-}
-.kasse3 a{
-    padding: 20px;
-}
-.kasse4 a{
-    padding: 20px;
-}
-
-
 
 .background{
     display: flex;
@@ -315,11 +194,20 @@ body{
 }
 
 footer {
-    margin-top: 30px;
+    margin-top: 100px;
     background-color: var(--main-farve);
     color: #fff;
     padding: 20px;
     text-align: center;
+
+}
+
+@media screen and (min-width:824px) {
+    footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    }
 }
 
 .footer-content {
@@ -344,4 +232,8 @@ img{
 
 p{
     margin: 5;
+}
+
+.title h1{
+    color: white;
 }
