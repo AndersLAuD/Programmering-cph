@@ -19,50 +19,33 @@ body {
   h2{
     text-align: center;
   }
+  p{
+    text-align: center;
+  }
   .flex-container{
     padding: 15px;
     margin-top: 15px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-  .kasse1{
+  .kasse1, .kasse2, .kasse3, .kasse4{
     border: 6px solid var(--gray-light);
     margin-left: 30px;
     margin-top: 50px;
     width: 300px;
+    min-width: 300px;
     height: 200px;
+    display: flex;
     flex-wrap: wrap;
-
   }
-  .kasse2{
-  border: 6px solid var(--gray-light);
-  margin-left: 30px;
-  margin-top: 50px;
-  width: 300px;
-  height: 200px;
-  flex-wrap: wrap;
-  
-}
-  .kasse3{
-  border: 6px solid var(--gray-light);
-  margin-left: 30px;
-  margin-top: 50px;
-  width: 300px;
-  height: 200px;
-  flex-wrap: wrap;
-}
-  .kasse4{
-  border: 6px solid var(--gray-light);
-  margin-left: 30px;
-  margin-top: 50px;
-  width: 300px;
-  height: 200px;    
-  flex-wrap: wrap;
-}
-
-  .behind{
-    min-width: none; 
+  img{
     width: 100%;
-    background: linear-gradient(var(--white),var(--gray-light));
+    height: 100%;
+  }
+  .behind{
+    width: 100%;
+    background: linear-gradient(var(--white), var(--gray-light));
     background-position: center;
     background-size: cover;
     position: relative;
@@ -103,8 +86,11 @@ body {
   }
 
   .button{
-    outline: 2px solid var(--gray-dark);
+    border: 2px solid var(--gray-dark);
+    border-top: none;
+    border-right: none;
   }
+
 
   @media screen and (max-width: 600px){
     .topnav a{
@@ -132,6 +118,9 @@ body {
     .responsive .button{
         width: 100%;
         text-align: center;
+    }
+    .button{
+      border-top: none;
     }
   }
 
