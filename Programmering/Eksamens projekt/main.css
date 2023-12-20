@@ -7,7 +7,12 @@
     --green: #4d4f3a;
     --min-skrift: arial,helvetica,sans-serif;
 }
-
+  .stor-text{
+    font-size: 60px;
+  }
+  .mellem-text{
+    font-size: 32px;
+  }
 body {
     margin: 0;
     font-family: var(--min-skrift);
@@ -29,13 +34,14 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+    /* Alle kasser i hele portfolioen bliver styret herfra */
   .kasse1, .kasse2, .kasse3, .kasse4{
     border: 6px solid var(--gray-light);
     margin-left: 30px;
     margin-top: 50px;
     width: 300px;
-    min-width: 300px;
-    height: 200px;
+    min-width: 400px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -75,9 +81,11 @@ body {
 
   .logo{
     position: absolute;
-    top: 15px;
+    top: -40px;
     left: 15px;
     z-index: 1;
+    object-fit: cover;
+    height: 140px;
   }
 
   .logo a{
@@ -123,12 +131,22 @@ body {
       border-top: none;
     }
   }
-
-
+  .footer {
+    background-color: var(--gray-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+  }
+  a:link, a:visited{
+    color: var(--white);
+    text-decoration: none;
+  }
 
 /*display af farve palette*/
   .container{
     padding: 15px;
+    margin-top: 30px;
+    width: 100%;
 }
 .barn1{
     background-color: var(--green);
