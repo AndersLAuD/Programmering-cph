@@ -13,6 +13,14 @@
   .mellem-text{
     font-size: 32px;
   }
+  .btekst{
+    font-size: 18px;
+    border: 6px solid var(--green);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -50px;
+    font-weight: 550;
+  }
 body {
     margin: 0;
     font-family: var(--min-skrift);
@@ -33,6 +41,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
     /* Alle kasser i hele portfolioen bliver styret herfra */
   .kasse1, .kasse2, .kasse3, .kasse4{
@@ -44,6 +53,8 @@ body {
     height: 400px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 100px;
   }
   img{
     width: 100%;
