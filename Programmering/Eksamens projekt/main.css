@@ -1,4 +1,4 @@
-/* Variabel !VIGTIG! gør man kan bruge ting og ændre dem igennem hele dokumentet istedet for at skulle skrive det samme igen og igen og hvis du så skal ændre noget bliver det irri */
+/* Variabel gør man kan bruge ting og ændre dem igennem hele dokumentet istedet for at skulle skrive det samme igen og igen og hvis du så skal ændre noget bliver det irri */
 :root{
     --beige: #af9e7f;
     --gray-dark: #4d4740;
@@ -13,6 +13,7 @@
   .mellem-text{
     font-size: 32px;
   }
+  /* tekst bokse under projekter */
   .btekst{
     font-size: 18px;
     border: 6px solid var(--green);
@@ -20,6 +21,9 @@
     margin: 0 auto;
     margin-top: -50px;
     font-weight: 550;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 body {
     margin: 0;
@@ -63,6 +67,7 @@ body {
   .fit{
     overflow: hidden;
   }
+  /* laver det fadede på baggrunden */
   .behind{
     width: 100%;
     background: linear-gradient(var(--white), var(--gray-light));
