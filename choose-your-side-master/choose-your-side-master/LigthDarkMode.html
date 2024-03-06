@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <style>
+      /* Theme styles: Default is dark */
+      .dark-mode {
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+
+      .light-mode {
+        background-color: white;
+        color: black;
+        text-align: center;
+      }
+
+      main {
+        margin: auto;
+      }
+
+      .image {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 500px;
+        height: 400px;
+        background-image: url(img/Darth-Vader.png);
+      }
+
+      .light-mode .image {
+        background-image: url(img/skywalker.png);
+      }
+
+      /* Hide "light side"-title when dark. */
+      .dark-mode .light-title {
+        visibility: hidden;
+        display: none;
+      }
+
+      /* Hide "dark side"-title when light. */
+      .light-mode .dark-title {
+        display: none;
+        visibility: hidden;
+      }
+    </style>
+
+    <title>Your Star wars alliance!</title>
+  </head>
+  <body class="dark-mode">
+    <section>
+      <main>
+        <h1>Your Star wars alliance!</h1>
+        <h2 class="dark-title"><i>You are turning to the dark side...</i></h2>
+        <h2 class="light-title">
+          <i>You are turning to the ligth side...</i>
+        </h2>
+        <section class="image"></section>
+      </main>
+    </section>
+  </body>
+</html>

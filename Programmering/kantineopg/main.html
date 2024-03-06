@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="slider">
+        <div class="slides">
+            <img class="slide" src="Img/Skitze-portfolio.jpg" alt="Image #1">
+            <img class="slide" src="Img/Skitze-portfolio.jpg" alt="Image #2">
+            <img class="slide" src="Img/Navigation-designprocess.jpg" alt="Image #3">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll(".slides img");
+        let slideIndex = 0;
+        let intervalId = null;
+        
+        document.addEventListener("DOMContentLoaded", initializeSlider);
+        
+        function initializeSlider(){
+            if(slides.length > 0){
+                slides[slideIndex].classList.add("displaySlide");
+                intervalId = setInterval(nextSlide, 5000);
+            }
+        }
+        
+        function showSlide(index){
+            if(index >= slides.length){
+                slideIndex = 0;
+            }
+            else if(index < 0){
+                slideIndex = slides.length - 1;
+            }
+        
+            slides.forEach(slide => {
+                slide.classList.remove("displaySlide");
+            });
+            slides[slideIndex].classList.add("displaySlide");
+        }
+        
+        function prevSlide(){
+            clearInterval(intervalId);
+            slideIndex--;
+            showSlide(slideIndex);
+        }
+        
+        function nextSlide(){
+            slideIndex++;
+            showSlide(slideIndex);
+        }
+        </script>
+</body>
+</html>
