@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>om os</title>
+
+    <link rel="stylesheet" href="om.css">
+    <link rel="stylesheet" href="generel.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/Asset 3.png" alt="" width="260px" >
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="button">Forside</a>
+        
+            <div class="button" onclick="toggleSubnav('MenuSubnav')">
+              <a href="#" class="button">Menu <img class="img1" id="rotateimg" onclick="rotate()" src="img/arrow1.png" alt="" width="50px"></a>
+        
+              <div class="subnav" id="MenuSubnav">
+                <a href="index.html">Dagenret</a>
+                <a href="index.html">Sandwich</a>
+                <a href="index.html"> Varme drikke</a>
+                <a href="index.html"> Kolde drikke</a>
+                <a href="index.html">tilbehør</a>
+              </div>
+            </div>
+        
+            <a href="om.html" class="button">Om</a>
+            <a href="kontakt.html" class="button">Kontakt</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+      </header>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      
+        function toggleSubnav(subnavId) {
+          var subnav = document.getElementById(subnavId);
+          subnav.style.display = subnav.style.display === 'block' ? 'none' : 'block';
+        }
+      </script>
+  
+      <script>
+          function rotate(){ 
+          if(document.getElementById("rotateimg").classList=="img1"){ 
+              document.getElementById("rotateimg").classList+=" rotate1"
+          }
+          else{
+              document.getElementById("rotateimg").classList="img1"
+          }
+          }
+      </script>
+
+    <div class="ommos">
+    <section class="flex">
+            <div class="image">
+              <img class="billed" src="img/kantine.png" alt="">
+            </div>
+            <div class="text">
+                <h1>Velkommen til CPH Business Kantinen!</h1>
+                <p> Vi byder dig velkommen til et sted, hvor smag og kvalitet mødes i perfekt harmoni. Vores kantine er ikke bare et sted at spise, det er et sted at samles, dele ideer og nyde gode måltider sammen.</p>
+
+                <p> Vores menu er nøje sammensat for at tilfredsstille enhver smag og ethvert behov. Fra friske salater til lækre sanswiches, søde smoothies til forfriskende drikkevare- vi har noget for enhver smag og ethvert humør.</p>
+                    
+                <p>  Vi stræber altid efter at levere mad af højeste kvalitet, så du kan nyde dine måltider med ro i sindet. Vores dedikerede personale er altid klar til at hjælpe og sikre, at din oplevelse i kantinen er enestående hver gang.</p>
+                    
+                <p> Så tag en pause fra dine studier eller arbejde, og kom og nyd et lækkert måltid i vores hyggelige kantine. Vi glæder os til at byde dig velkommen og give dig en smagsoplevelse, du sent vil glemme!</p>
+                    
+                <p>  Velbekomme!</p>
+            </div>
+    </section>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+                     
+      
+          <div class="footer-section">
+              <h3> Kontakt os </h3>
+              <p> Email: kantine@cphbusiness.dk</p>
+              <p>Phone: +45 12 34 56</p>
+               </div>
+      
+           <div class="footer-section">
+               <h3> CPH Business Lyngby </h3>
+               </div>
+      
+          <div class="footer-section">
+      
+           <a href="#">
+           <img src="img/facebook.png" alt="facebook" width="40px"></a>
+      
+           <a class="insta" href="#"> 
+           <img src="img/instagram.png" alt="instagram" width="47px"></a>
+      
+           </div>
+      
+        </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,181 @@
+:root{
+    --blue: #051539;
+    --yellow: #f0b357;
+}
+
+html{
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+.margin {
+    width: 750px;
+    margin: 0px auto;
+}
+
+.size { 
+  background-image: url("img/dagensret.png");
+  background-size: 100%;
+  position: relative;
+  background-position-x: center;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 750px){
+    .margin{
+        width: 98%;
+    }
+}
+/* header */
+.box {
+    background-color: #051539;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.center {
+    text-align: center;
+}
+h2 {
+    margin: 0;
+}
+/* slider */
+.carousel-container {
+    width: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 750px){
+    .carousel-container{
+      width: 98%;
+    }
+  }
+    
+    .carousel-wrapper {
+      display: flex;
+      transition: transform 0.5s ease;
+      border-radius: 5px;
+    }
+    
+    .carousel-item {
+      flex: 0 0 100%;
+      max-width: 100%;
+      border-radius: 5px;
+    }
+    
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 10px;
+      height: 40px;
+      width: 40px;
+      border-radius: 80%;
+      border: none;
+      z-index: 1;
+      font-size: 1em;
+    }
+    
+    .carousel-btn-prev {
+      left: 10px;
+    }
+    
+    .carousel-btn-next {
+      right: 10px;
+    }
+    /* slider */
+
+    /* pbox */
+
+    .spalter {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pbox {
+        text-align: left;
+        height: auto;
+        width: 48%;
+        overflow: hidden;
+        margin-right: 4%;
+    }
+    .pbox2 {
+        text-align: left;
+        height: auto;
+        width: 48%;
+        overflow: hidden;
+    }
+
+
+
+
+
+    /* Luca kode */
+
+aside{
+  width: 100%;
+  position: fixed;
+}
+
+.offset{
+  /* Offset i toppen, 
+  ændre dette for at få det længere ned på siden */
+  margin-top: 450px;
+  /* Mere minus længere til venstre */
+  margin-left: -400px;
+  transition: 0.25s;
+}
+
+.offset1{
+  margin-top: 450px;
+  margin-right: -1600px;
+  transition: 0.5s;
+}
+
+.getting_center{
+  width: 750px;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.getting_center p{
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.getting_center p a{
+  text-decoration: none;
+  color: #000000;
+}
+
+@media screen and (max-width: 1200px){
+  aside{
+    display: none;
+  }
+}
+
+h3 a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5em;
+}

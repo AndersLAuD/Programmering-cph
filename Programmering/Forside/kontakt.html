@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="Kontakt.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "IICOjP8VvZvZgUlsM",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const Navn = document.getElementById("Navn");
+                const Email = document.getElementById("Email");
+                const Besked = document.getElementById("Besked");
+                const info = document.getElementById("info");
+
+                //if input ikke bliver udfyldt
+
+                if(Navn.value != "" && Email.value != "" && Besked.value != ""){
+                    
+                    emailjs.sendForm('service_kesfnw1', 'template_uvrhrpc', this).then(() => {
+                        console.log('Mail sendt SUCCESS!');
+                        
+                            //Removes the submit buttons funktion and the text in the input boxes
+                            document.getElementById("submit").setAttribute("type","Done");
+                            Navn.value = null;
+                            Email.value = null;
+                            Besked.value = null;
+
+                            Navn.classList = "";
+                            Email.classList = "";
+                            Besked.classList = "";
+
+                            info.textContent = "Mail sendt succesfuldt";
+
+                        }, (error) => {
+                            console.log('FAILED...', error);
+                    });
+                } 
+                else{
+                    
+                    info.textContent = "Mangler at udfylde felter";
+                    if(Navn.value == ""){
+                        Navn.classList = "red";
+                    }
+                    if(Email.value == ""){
+                        Email.classList = "red";
+                    }
+                    if(Besked.value == ""){
+                        Besked.classList = "red";
+                    }
+                    setTimeout(() => info.textContent = " ",10000)
+                    
+                }
+            });
+        }
+    </script>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/Asset 3.png" alt="" width="260px" >
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="button">Forside</a>
+        
+            <div class="button" onclick="toggleSubnav('MenuSubnav')">
+              <a href="#" class="button">Menu <img class="img1" id="rotateimg" onclick="rotate()" src="img/arrow1.png" alt="" width="50px"></a>
+        
+              <div class="subnav" id="MenuSubnav">
+                <a href="index.html">Dagenret</a>
+                <a href="index.html">Sandwich</a>
+                <a href="index.html"> Varme drikke</a>
+                <a href="index.html"> Kolde drikke</a>
+                <a href="index.html">tilbehør</a>
+              </div>
+            </div>
+        
+            <a href="om.html" class="button">Om</a>
+            <a href="kontakt.html" class="button">Kontakt</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+      </header>
+    
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      
+        function toggleSubnav(subnavId) {
+          var subnav = document.getElementById(subnavId);
+          subnav.style.display = subnav.style.display === 'block' ? 'none' : 'block';
+        }
+      </script>
+    
+      <script>
+          function rotate(){ 
+          if(document.getElementById("rotateimg").classList=="img1"){ 
+              document.getElementById("rotateimg").classList+=" rotate1"
+          }
+          else{
+              document.getElementById("rotateimg").classList="img1"
+          }
+          }
+      </script>
+
+    <div class="kontaktform">
+
+        <div class="infotext">
+            <h1 class="overskrift">Kontakt</h1>
+            <p class="text">Har du spørgsmål, kommentarer eller ønsker at komme i kontakt med os? Udfyld venligst formularen nedenfor, og vi vender tilbage til dig så hurtigt som muligt. Vi ser frem til at høre fra dig!</p>
+        </div>
+
+        <form id="contact-form">
+            <!-- To simplify the tutorial, the value is static. -->
+            <input type="hidden" name="contact_number" value="697483">
+            
+            <div class="horizontal">
+                <label>Name</label>
+                <input type="text" name="from_name" placeholder="Navn" id="Navn">
+            </div>
+
+            <div class="horizontal">
+                <label>E-mail</label>
+                <input type="email" name="Email_name" placeholder="Eksempel@email.com" id="Email">
+            </div>
+
+            <div class="horizontal">
+                <label>Besked</label>
+                <textarea name="message" placeholder="Din besked" id="Besked"></textarea>
+            </div>
+
+            <div class="Vertical">
+                <input type="submit" value="Send" id="submit" class="info">
+                <p class="info" id="info"></p>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+                       
+        
+            <div class="footer-section">
+                <h3> Kontakt os </h3>
+                <p> Email: kantine@cphbusiness.dk</p>
+                <p>Phone: +45 12 34 56</p>
+                 </div>
+        
+             <div class="footer-section">
+                 <h3> CPH Business Lyngby </h3>
+                 </div>
+        
+            <div class="footer-section">
+        
+             <a href="#">
+             <img src="img/facebook.png" alt="facebook" width="40px"></a>
+        
+             <a class="insta" href="#"> 
+             <img src="img/instagram.png" alt="instagram" width="47px"></a>
+        
+             </div>
+        
+          </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="generel.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+      <!-- navbar --- start -->
+      <header class="navbar">
+        <div class="logo">
+            <img src="img/Asset 3.png" alt="" width="260px" >
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="button">Forside</a>
+        
+            <div class="button" onclick="toggleSubnav('MenuSubnav')">
+              <a href="#" class="button">Menu <img class="img1" id="rotateimg" onclick="rotate()" src="img/arrow1.png" alt="" width="50px"></a>
+        
+              <div class="subnav" id="MenuSubnav">
+                <a href="index.html">Dagenret</a>
+                <a href="#1">Sandwich</a>
+                <a href="#2"> Varme drikke</a>
+                <a href="#3"> Kolde drikke</a>
+                <a href="#4">tilbehør</a>
+              </div>
+            </div>
+        
+            <a href="om.html" class="button">Om</a>
+            <a href="kontakt.html" class="button">Kontakt</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+      </header>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      
+        function toggleSubnav(subnavId) {
+          var subnav = document.getElementById(subnavId);
+          subnav.style.display = subnav.style.display === 'block' ? 'none' : 'block';
+        }
+      </script>
+  
+      <script>
+          function rotate(){ 
+          if(document.getElementById("rotateimg").classList=="img1"){ 
+              document.getElementById("rotateimg").classList+=" rotate1"
+          }
+          else{
+              document.getElementById("rotateimg").classList="img1"
+          }
+          }
+      </script>
+       <!-- navbar --- slut -->
+    <aside>
+        <div class="offset" id="offset">
+            <div class="getting_center">
+                <h3> <a href="index.html">- Menu</a></h3>
+                <p> <a href="index.html">- Dagensret</a></p>
+                <p> <a href="#1">- Sandwiches</a></p>
+                <p> <a href="#2">- Kolde drikke</a></p>
+                <p> <a href="#3">- Varme drikke</a></p>
+                <p> <a href="#4">- Tilbehør</a></p>
+            </div>
+        </div>
+    </aside>
+
+    <aside>
+      <div class="offset1" id="offset1">
+          <div class="getting_center">
+              <p id="sky"></p>
+              <p id="temperature"></p>
+              <p id="rain_mm"></p>
+          </div>
+      </div>
+  </aside>
+
+
+    <!-- section 1 --- start -->
+     <div class="ret size">
+    </div>
+    <!-- section 1 --- slut -->
+      
+
+    <div class="margin center"> 
+
+        <h1>Dagens ret | 35kr.</h1>
+        <p>Dagens ret byder på en lækker og velsmagende portion stegte nudler med saftigt kyllingekød. Vores køkken har nøje udvalgt friske ingredienser for at sikre den bedste smagsoplevelse.</p>
+    <!-- SANDWHICH MENU -->
+        <div class="box">
+        <h2>Sandwich</h2>
+        </div>
+
+    </div>
+    <!-- slider 1 --- start -->
+    <div class="carousel-container" id="1">
+        <div class="carousel-wrapper" id="carouselWrapper1">
+
+          <div class="carousel-item1">
+            <img src="img/Sandwhich/kylling.png" alt="Image 1">
+          </div>
+
+          <div class="carousel-item1">
+            <img src="img/Sandwhich/skinke_ost.png" alt="Image 2">
+          </div>
+
+          <div class="carousel-item1">
+            <img src="img/Sandwhich/and.png" alt="Image 3">
+          </div>
+
+          <div class="carousel-item1">
+            <img src="img/Sandwhich/tun_majs.png" alt="Image 4">
+          </div>
+
+          <div class="carousel-item1">
+            <img src="img/Sandwhich/egg_rejer.png" alt="Image 5">
+          </div>
+
+          <div class="carousel-item1">
+            <img src="img/Sandwhich/roastbeef.png" alt="Image 6">
+          </div>
+
+          <div class="carousel-item1">
+            <img src="img/Sandwhich/frikadelle.png" alt="Image 7">
+          </div>
+   
+        </div>
+        <button class="carousel-btn carousel-btn-prev" onclick="prevSlide1()">&#10094;</button>
+        <button class="carousel-btn carousel-btn-next" onclick="nextSlide1()">&#10095;</button>
+      </div>
+        <!-- slider 1 --- slut -->
+ 
+    
+      <div class="spalter margin" >
+
+        <div class="pbox">
+            <h3>1: Kylling | 26kr.</h3>
+            <p>Indhold:
+              Toast med kylling, ost, tomat, majs og iceberg.</p>
+        </div>
+        <div class="pbox2">
+            <h3>2: Skinke og ost | 26kr.</h3>
+            <p>Indhold:
+              Hvedebrød med skinke, ost, tomat og iceberg.</p>
+        </div>
+        <div class="pbox">
+            <h3>3: Tun salat | 26kr.</h3>
+            <p>Indhold:
+              Hvedebrød med tun, gulerødder, majs og salat.</p>
+        </div>
+        <div class="pbox2">
+            <h3>4: And og løg | 26kr.</h3>
+            <p>Indhold:
+              Hvedebrød med and, løg, tomat og salat.</p>
+        </div>
+        <div class="pbox">
+            <h3>5: Rejer og æg | 26kr.</h3>
+            <p>Indhold:
+              Hvedebrød med rejer, æg og salat.</p>
+        </div>
+        <div class="pbox2">
+            <h3>6: Roastbeef | 26kr.</h3>
+            <p>Indhold:
+              Hvedebrød med roastbeef, gulerød, agurk, tomat og iceberg.</p>
+        </div>
+        <div class="pbox">
+            <h3>7: Frikadeller | 26kr.</h3>
+            <p>Indhold:
+              Hvedebrød med frikadeller, agurk, rødkål og salat.</p>
+        </div>
+
+      </div>
+
+  <!-- Kolde DRIKKE MENU -->
+    <div class="margin">
+      <div class="box">
+        <h2>Kolde drikke</h2>
+        </div>
+    </div>
+
+
+    <!-- slider 2 --- start -->
+    <div class="carousel-container" id="2">
+      <div class="carousel-wrapper" id="carouselWrapper2">
+
+        <div class="carousel-item2">
+          <img src="img/drikkevarer/sodavand.png" alt="Image 1">
+        </div>
+
+        <div class="carousel-item2">
+          <img src="img/drikkevarer/drikkeyoghurt1.png" alt="Image 2">
+        </div>
+
+        <div class="carousel-item2">
+          <img src="img/drikkevarer/drikkeyoghurt2.png" alt="Image 3">
+        </div>
+
+        <div class="carousel-item2">
+          <img src="img/drikkevarer/proteindrik.png" alt="Image 4">
+        </div>
+
+        <div class="carousel-item2">
+          <img src="img/drikkevarer/skyrdrink.png" alt="Image 5">
+        </div>
+
+      </div>
+      <button class="carousel-btn carousel-btn-prev" onclick="prevSlide2()">&#10094;</button>
+      <button class="carousel-btn carousel-btn-next" onclick="nextSlide2()">&#10095;</button>
+    </div>
+      <!-- slider 2 --- slut -->
+ 
+      <div class="spalter margin" >
+
+        <div class="pbox">
+            <h3>Sodavand | 21kr.</h3>
+            <p>Coca Cola, faxe condi, sport, fanta, cola zero, pepsi, schweppes</p>
+        </div>
+        <div class="pbox2">
+            <h3>Drikkeyoghurt | 21kr.</h3>
+            <p>Jordbær, Blåbær</p>
+        </div>
+        <div class="pbox">
+          <h3>Protein drik | 21kr.</h3>
+          <p>Hindbær</p>
+      </div>
+        <div class="pbox2">
+          <h3>Skyr drik | 21kr.</h3>
+          <p>Pear & Vanilla</p>
+      </div>
+        </div>
+
+<!-- Kolde DRIKKE SLUT -->
+
+
+  <!-- Varme DRIKKE MENU -->
+  <div class="margin">
+    <div class="box">
+      <h2>Varme drikke</h2>
+      </div>
+  </div>
+
+
+      <!-- slider 3 --- start -->
+      <div class="carousel-container" id="3">
+        <div class="carousel-wrapper" id="carouselWrapper3">
+  
+          <div class="carousel-item3">
+            <img src="img/kaffe_te.png" alt="Image 1">
+          </div>
+  
+          <div class="carousel-item3">
+            <img src="img/kaffe_te.png" alt="Image 2">
+          </div>
+
+        </div>
+        <button class="carousel-btn carousel-btn-prev" onclick="prevSlide3()">&#10094;</button>
+        <button class="carousel-btn carousel-btn-next" onclick="nextSlide3()">&#10095;</button>
+      </div>
+        <!-- slider 3 --- slut -->
+      
+    <div class="spalter margin" >
+
+      <div class="pbox">
+          <h3>Kaffe | 12kr.</h3>
+          <p>Kaffe latte, Expresso, Chai Latte, Sort kaffe</p>
+      </div>
+      <div class="pbox2">
+          <h3>Te | 12kr.</h3>
+          <p>Sort Te, grøn te, morgen te, kamille te</p>
+      </div>
+
+    </div>
+<!-- Varme DRIKKE SLUT -->
+
+
+  <!-- Diverse DRIKKE MENU -->
+  <div class="margin">
+    <div class="box">
+      <h2>Diverse</h2>
+      </div>
+  </div>
+
+   <!-- slider 4 --- start -->
+   <div class="carousel-container" id="4">
+    <div class="carousel-wrapper" id="carouselWrapper4">
+
+      <div class="carousel-item4">
+        <img src="img/trbestik.png" alt="Image 1">
+      </div>
+
+      <div class="carousel-item4">
+        <img src="img/Plastik kop.png" alt="Image 2">
+      </div>
+
+    </div>
+    <button class="carousel-btn carousel-btn-prev" onclick="prevSlide4()">&#10094;</button>
+    <button class="carousel-btn carousel-btn-next" onclick="nextSlide4()">&#10095;</button>
+  </div>
+    <!-- slider 4s --- slut -->
+
+    <div class="spalter margin" >
+
+      <div class="pbox">
+          <h3>Træ bestik | 1kr. pr. stk.</h3>
+
+      </div>
+      <div class="pbox2">
+          <h3>Plastik kop | 10kr. pr. stk.</h3>
+
+      </div>
+   
+      </div>
+
+      <script src="slider.js"></script>
+      <script>
+
+        window.onscroll = function() {
+            if(this.scrollY <= 450 ){
+                //du er i toppen
+                document.getElementById("offset").style.marginTop = -this.scrollY + 450 + "px";
+                document.getElementById("offset1").style.marginTop = -this.scrollY + 450 + "px";
+              }
+            else{
+                //du er i scrolled
+                document.getElementById("offset").style.marginTop = "30px";
+                document.getElementById("offset1").style.marginTop = "30px";
+
+            }
+            //console.log(this.scrollY);
+        }
+    </script>
+    <script>
+      function getRandomNumber(){
+          return Math.floor(Math.random()*10) + 1;
+      }
+
+      async function getWeather(){
+          const url = "https://65ddd3abdccfcd562f558d61.mockapi.io/api/v1/forecast/" + getRandomNumber();
+          const response = await axios.get(url);
+          const weather = response.data;
+
+          //Print
+          document.getElementById("sky").textContent = "Det er " + weather.sky;
+          document.getElementById("temperature").textContent = "Med en temp på " + weather.temperature + " grader";
+          document.getElementById("rain_mm").textContent = "Forventet regn " + weather.rain_mm + " mm";
+      }
+
+      getWeather();
+  </script>
+
+
+<footer>
+  <div class="footer-content">
+                 
+  
+      <div class="footer-section">
+          <h3> Kontakt os </h3>
+          <p> Email: kantine@cphbusiness.dk</p>
+          <p>Phone: +45 12 34 56</p>
+           </div>
+  
+       <div class="footer-section">
+           <h3> CPH Business Lyngby </h3>
+           </div>
+  
+      <div class="footer-section">
+  
+       <a href="#">
+       <img src="img/facebook.png" alt="facebook" width="40px"></a>
+  
+       <a class="insta" href="#"> 
+       <img src="img/instagram.png" alt="instagram" width="47px"></a>
+  
+       </div>
+  
+    </div>
+  </footer>
+
+</body>
+
+</html>

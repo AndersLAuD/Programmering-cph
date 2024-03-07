@@ -1,0 +1,48 @@
+:root{
+    --blue: #051539;
+    --yellow: #f0b357;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+.image {
+width: 100%;
+}
+
+.billed {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.text{
+    width: 100%;
+}
+
+.ommos{
+    width: 750px;
+    margin: 50px auto;
+}
+@media screen and (max-width: 750px){
+    .ommos{
+        width: 98%;
+    }
+    
+    .image {
+        width: 98%;
+    }
+
+    .billed {
+        width: 98%;
+    }
+
+    .text{
+        width: 98%;
+    }
+    
+}
+

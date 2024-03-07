@@ -1,0 +1,168 @@
+body {
+    margin: 0px;
+    padding: 0px;
+  font-family: "Roboto", sans-serif; 
+  }
+
+  header{
+    z-index: 2;
+  }
+  footer{
+    z-index: 2;
+  }
+
+.navbar{
+    background-color: #01153B;
+    margin: 0;
+    padding: 10px;
+    border-bottom: solid 5px #fbb041;
+}
+
+.img1{
+    margin: -14px;
+    padding: 0px;
+
+}
+
+.rotate1{
+    transform: rotate(90deg);
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: var(--kedelig-graa);
+    display: flex;
+    justify-content: flex-end;
+  }
+.topnav a{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-decoration: none;
+  }
+
+.topnav a:hover{
+    background-color: #ddd;
+    color: #000000;
+  }
+.topnav .icon{
+    display: none;
+    font-size: 1.2rem;
+  }
+ 
+  .subnav {
+    display: none;
+    margin-top: 20px;
+    background-color: #ffffff;
+    
+  }
+
+  .subnav a {
+    color: #ffffff;
+    background-color: #01153B;
+    text-decoration: none;
+    display:block;
+    font-size: 16px;
+    
+  }
+
+  .subnav a:hover {
+    background-color: #ddd;
+  }
+
+.logo{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+  }
+
+.logo a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .button{
+    padding: 15px;
+    
+  }
+
+@media screen and (max-width: 700px){
+
+
+.topnav a{
+        display: none;
+    }
+.topnav .icon{
+        display: block;
+    }
+/* denne klasse bliver skabt af javascrbt når man klikker på burger menuen */
+.responsive{
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+.responsive a{
+        display: block;
+        font-size: 1.2rem;
+    }
+
+.responsive .icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+.responsive .button{
+        width: 100%;
+        text-align: center;
+    }
+ 
+
+}
+
+
+footer {
+    background-color: #01153B;
+    color: #fffbfb;
+    border-top: 5px solid #fbb041;
+    margin-bottom: 0px;
+
+
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  .footer-section {
+    text-wrap:wrap;
+    text-align: center;
+    margin: 30px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0px;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+
+  }
+
+  .insta{
+    margin: 10px;  
+  }
